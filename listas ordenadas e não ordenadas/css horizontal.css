@@ -1,0 +1,89 @@
+/* Aplica a todos os elementos da página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Barra de navegação superior */
+nav {
+  background: #BA0000;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Remove marcadores */
+nav ul {
+  list-style: none;
+}
+
+/* Itens principais na horizontal */
+nav ul li {
+  float: left;
+  position: relative;
+}
+
+/* Links principais */
+nav ul li a {
+  display: block;
+  padding: 5px 15px;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Hover links principais */
+nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Submenu */
+nav ul ul {
+  background: #BA0000;
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Mostrar submenu ao passar o mouse */
+nav ul li:hover ul {
+  display: block;
+}
+
+/* Itens dentro do submenu */
+nav ul ul li {
+  width: 300px;
+  border-bottom: 1px solid white;
+}
+
+/* Links do submenu */
+nav ul ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Hover submenu */
+nav ul ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Espaço extra para não cobrir o conteúdo */
+.content {
+  margin-top: 60px;
+  padding: 20px;
+}
